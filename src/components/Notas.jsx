@@ -19,31 +19,9 @@ import Typography from '@mui/material/Typography';
 
 export const Notas = () => {
 
-    //const context = useContext(Context)
-
-    //console.log("context", context)
     const [text, setText] = useState("")
     const [descripcion, setDescripcion] = useState("")
     const [cards, setCards] = useState([])
-
-    // const texto = "";
-    // const descripcion = "";
-    // const arr = [
-    //     {
-    //         id:0,
-    //         texto: "hola",
-    //         descripcion: "hola hola"
-    //     },
-    //     {
-    //         id:1,
-    //         texto: "hello",
-    //         descripcion: "hello hello"
-    //     }
-    // ]
-
-    // useEffect(() => {
-    //     setText(text)
-    // }, [])
 
     const Add = () => {
         const newCard = {
