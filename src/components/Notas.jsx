@@ -3,6 +3,7 @@ import React from 'react'
 //import * as React from 'react';
 import { useContext, useState, useEffect } from 'react';
 import Context from '../context/StaticContext';
+import { NavBar } from './NavBar';
 
 //import { ListaNotas } from './ListaNotas';
 
@@ -40,14 +41,15 @@ export const Notas = () => {
                 card.map((element, index) => {
                     //key:{texto}
                     return ( */}
-                        
+                        <NavBar />
                         <Box
                             component="form"
                             sx={{
-                                '& > :not(style)': { m: 1, width: '25ch' },
+                                '& > :not(style)': { m: 1, width: '35ch' },
                             }}
                             noValidate
                             autoComplete="off"
+                            className='cards'
                         >
                             <TextField
                                 id="outlined-basic"
@@ -59,6 +61,7 @@ export const Notas = () => {
                                     setText(e.target.value)
                                 }
                                 color="info"
+                                
                             // style={flexbox}
                             />
 
