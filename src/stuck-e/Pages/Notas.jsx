@@ -3,7 +3,7 @@ import React from 'react'
 //import * as React from 'react';
 import { useContext, useState, useEffect } from 'react';
 import Context from '../context/StaticContext';
-import { NavBar } from './NavBar';
+// import { NavBar } from './NavBar';
 
 //import { ListaNotas } from './ListaNotas';
 

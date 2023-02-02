@@ -63,3 +63,11 @@
 //         </Box>
 //     )
 // }
+
+import React from 'react'
+
+export const ListaNotas = () => {
+  return (
+    <div>ListaNotas</div>
+  )
+}

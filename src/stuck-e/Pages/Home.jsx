@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from "react"
 import Context from "../context/StaticContext"
-import { NavBar } from './NavBar'
+import { NavBar } from '../components/NavBar'
 
 export const Home = () => {
 
@@ -10,11 +10,9 @@ export const Home = () => {
     return (
         <>
         <NavBar />
-            <div>Home</div>
-            <h1>Hoemeee</h1>
+            <div >Home</div>
+            <h1 >Hoemeee</h1>
             {/* <h2>Home page (Private) - el estilo es: { estilo ? 'es negro': 'es blanco' }</h2> */}
         </>
     )
 }
-
-export default Home

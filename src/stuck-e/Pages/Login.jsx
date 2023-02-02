@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"        // 
 import Context from '../context/StaticContext'
 import logo from '../assets/descarga.png'
 import portada from '../assets/portada-stucki-1.jpg'
-import "../App.css"
-import { Landing, HomeRoute, Dashboard, NotasRoute } from "../routes/rutas"        // permite traer la funcion 'landing' 
-import { App } from '../App'
+// import "../App.css"
+// import { Landing, HomeRoute, Dashboard, NotasRoute } from "../routes/rutas"        // permite traer la funcion 'landing' 
+import '../../index.css'
 
 //Prime React
 import { Image } from 'primereact/image';
@@ -121,7 +121,7 @@ export const Login = () => {
 
     return (
 
-        <div className="form-demo">
+        <div className="form-demo ">
                 {/* <Dialog visible={showMessage} onHide={() => setShowMessage(false)} position="top" footer={dialogFooter} showHeader={false} breakpoints={{ '960px': '80vw' }} style={{ width: '30vw' }}>
                                     <div className="flex align-items-center flex-column pt-6 px-3">
                                         <i className="pi pi-check-circle" style={{ fontSize: '5rem', color: 'var(--green-500)' }}></i>
@@ -185,7 +185,7 @@ export const Login = () => {
                                 <label htmlFor="accept" >I agree to the terms and conditions*</label>
                             </div>
 
-                            <Link to="/navbar" className='nav_link'>
+                            <Link to="/Home" className='nav_link'>
                                 <Button type="submit" label="Submit" className="mt-2" />
                             </Link>
                         </form>
@@ -203,5 +203,3 @@ export const Login = () => {
         // </BrowserRouter>
     )
 }
-
-export default Login
